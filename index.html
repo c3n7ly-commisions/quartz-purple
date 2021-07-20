@@ -60,14 +60,17 @@
                   src="./external/img/logo.png"
                   alt="logo"
                   width="70px"
-                  uk-hidden@s
+                  class="uk-visible@m"
               /></a>
             </div>
 
             <!-- <div class="uk-navbar-center">World Our Vision</div> -->
 
             <div class="uk-navbar-right">
-              <ul class="uk-navbar-nav uk-nav-parent-icon" data-uk-nav>
+              <ul
+                class="uk-navbar-nav uk-nav-parent-icon uk-visible@m"
+                data-uk-nav
+              >
                 <li class="uk-active"><a href="#">Home</a></li>
                 <li class="uk-parent">
                   <a href="#">Baptism</a>
@@ -97,9 +100,49 @@
                 <li><a href="#">Item</a></li>
                 <li><a href="#">Item</a></li>
               </ul>
+              <!-- class="uk-navbar-toggle" -->
+              <a
+                class="uk-navbar-toggle uk-hidden@s"
+                uk-navbar-toggle-icon
+                uk-toggle
+                href="#phone-menu"
+              ></a>
             </div>
           </nav>
         </div>
+      </div>
+    </div>
+
+    <div id="phone-menu" uk-offcanvas class="uk-light">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <ul class="uk-nav uk-nav-default">
+          <li><a href="#">Home</a></li>
+          <li class="uk-parent">
+            <a href="#">Baptism</a>
+            <ul class="uk-nav-sub">
+              <li><a href="#">Sub</a></li>
+              <li><a href="#">Sub</a></li>
+            </ul>
+          </li>
+          <li class="uk-parent">
+            <a href="#">Baptism</a>
+            <ul class="uk-nav-sub">
+              <li><a href="#">Sub</a></li>
+              <li><a href="#">Sub</a></li>
+            </ul>
+          </li>
+          <li class="uk-parent">
+            <a href="#">Baptism</a>
+            <ul class="uk-nav-sub">
+              <li><a href="#">Sub</a></li>
+              <li><a href="#">Sub</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+        </ul>
       </div>
     </div>
 
