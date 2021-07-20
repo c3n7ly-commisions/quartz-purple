@@ -21,18 +21,24 @@
           uk-cover
         ></video>
         <div class="uk-overlay-primary uk-position-cover"></div>
-        <div class="uk-position-center uk-position-small uk-text-center">
-          <h1 uk-slideshow-parallax="x: 100,-100">
-            TURNING VICTIMS TO VICTORS
-          </h1>
-          <p uk-slideshow-parallax="x: 400,-400" class="uk-width-large">
+        <div
+          class="
+            uk-position-center
+            uk-position-small
+            uk-text-center
+            uk-flex
+            uk-flex-column
+            uk-flex-middle
+          "
+        >
+          <h1 class="uk-margin-remove-bottom">TURNING VICTIMS TO VICTORS</h1>
+          <p class="uk-width-large">
             Sit error non quod cupiditate necessitatibus. Maxime vel distinctio
             est sit dolor, nihil Mollitia praesentium tempora unde autem
+            explicabo Optio minima assumenda provident officiis eaque?
+            Repudiandae doloremque assumenda veritatis nesciunt
           </p>
-          <div
-            uk-slideshow-parallax="x: 600,-600"
-            class="uk-width-large uk-light"
-          >
+          <div class="uk-width-large uk-light">
             <button class="uk-button uk-button-primary">Primary</button>
             <button class="uk-button uk-button-default">Default</button>
           </div>
@@ -50,7 +56,11 @@
           <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-left">
               <a href="" class="uk-navbar-item uk-logo">
-                <img src="./external/img/logo.png" alt="logo" width="70px"
+                <img
+                  src="./external/img/logo.png"
+                  alt="logo"
+                  width="70px"
+                  uk-hidden@s
               /></a>
             </div>
 
@@ -283,14 +293,8 @@
     <div class="uk-section uk-section-default">
       <div class="uk-container uk-container-small">
         <div class="uk-cover-container uk-height-large">
-          <video
-            src="./external/vid/landing_video.mp4"
-            autoplay
-            loop
-            muted
-            playsinline
-            uk-cover
-          ></video>
+          <img src="./external/img/joshua-eckstein-nkUioaswtvM-unsplash.jpg"
+          uk-cover / >
 
           <div class="uk-position-top-right uk-padding-large">
             <span uk-overlay-icon></span>
@@ -369,4 +373,3 @@
     <!-- ===================================================================== -->
   </body>
 </html>
-
